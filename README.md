@@ -25,5 +25,5 @@ Automação foi desenvolvida em JavaScript usando o Cypress para Frontend e Back
 - ```npm run allure:report```- Gera o report
 - ```allure open```- Abre o report no navegador
 - ```npm run allure:clear```- Limpa o report
-`
+
 
