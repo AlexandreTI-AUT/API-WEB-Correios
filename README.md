@@ -1,41 +1,29 @@
 # QA Automation Challenge
 
-## Descrição:
+## Objetivo:
 
-Parte da próxima etapa, será realizar a automação (frontend e backend) do serviço de Busca CEP dos Correios.
-Você deverá providenciar uma pesquisa de CEP utilizando as urls abaixo:
+Realizar a automação (frontend e backend) do serviço de Busca CEP dos Correios.
+Automação foi desenvolvida em JavaScript usando o Cypress para Frontend e Backend.
 
 *Frontend:* https://www.correios.com.br/
 
 *Backend:* https://viacep.com.br/
 
-Será necessário validar pelo menos o retorno de 3 logradouros, ou seja, utilizando 3 CEPs na pesquisa.
+## Pré-requisito
 
-## O que validaremos nesse teste:
-- A maneira como você construiu os seus testes. Ex: Reutilização de Código;
-- Se você respeitou o que foi requisitado no desafio;
-- Documentação (README), explicando com o máximo de detalhes que puder, sobre como configurar, executar e o motivo pelo qual você adotou a estratégia de automação para esse desafio.
+- Instalar Node.js <https://nodejs.org/en> 
 
-## Diferenciais *(Não Obrigatórios)*
-- Utilizar um framework da linguagem Javascript;
-- Utilizar BDD com Cucumber;
-- Incluir um relatório.
+## Rodar os testes:
 
+- Clonar o repositóri`
+- Executar o comando ```npm install```
+- Execuatr o comando ```npx cypress Open``` para rodar os testes FrontEnd and BackEnd
 
-## Como entregar sua solução?
-*1) Clone o repositório;*
+## Executar Allure Report
 
-*2) Realize as alterações necessárias para construção/automação do teste;*
+- ```npx cypress run --env allure=true ``` - Executa os testes em modo headles
+- ```npm run allure:report```- Gera o report
+- ```allure open```- Abre o report no navegador
+- ```npm run allure:clear```- Limpa o report
+`
 
-*3) Adicione e commit todos os arquivos criados/alterados (todos mesmo);*
-
-*4) Gere um patch conforme comando de exemplo abaixo;*
-
-*5) Nos envie o patch através do email que entraremos em contato.*
-
-*Para gerar o patch:*
-```
-git format-patch origin/master --stdout > seu_nome.patch
-```
-
-### Boa sorte!
